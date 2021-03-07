@@ -11,11 +11,11 @@ echo "\e[1;32m [root password saved successful] \e[0m"
 #echo $PW | ./other_command_requires_sudo.sh <param>
 
 # 1. update
-echo $PW | sudo -S apt-get update > /dev/null 2>&1
+echo $PW | sudo -kS apt-get update > /dev/null 2>&1
 echo "\e[1;32m [pkgs update successful] \e[0m"
 
 # 2. check if git is installed
-echo $PW | sudo -S apt-get -fy install git #> /dev/null 2>&1
+echo $PW | sudo -kS apt-get -fy install git #> /dev/null 2>&1
 echo "\e[1;32m [git install successful] \e[0m"
 
 # 4. fetch scripts from 
