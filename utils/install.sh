@@ -8,3 +8,6 @@ g++ --version
 
 # 2. install OGL
 echo $PW | sudo -kS apt-get -fy install cmake libx11-dev xorg-dev libglu1-mesa-dev freeglut3-dev libglew1.5 libglew1.5-dev libglu1-mesa libglu1-mesa-dev libgl1-mesa-glx libgl1-mesa-dev > /dev/null 2>&1
+
+# 2. install open-vm-tools
+echo $PW | sudo -kS apt-get -fy install open-vm-tools-desktop > /dev/null 2>&1
