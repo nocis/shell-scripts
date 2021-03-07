@@ -20,7 +20,7 @@ git clone https://github.com/nocis/shell-scripts.git
 git pull --recurse-submodules
 
 # 5. auto install packages
-echo $PW | yes | ~/.local/shell-scripts/install.sh
+echo $PW | yes | ~/.local/shell-scripts/utils/install.sh
 
 # append init.sh scrirt to bashrc
 if grep -Fxq "init.sh" ~/.bashrc
@@ -29,6 +29,6 @@ then
     echo "init.sh is already loaded"
 else
     # if not found
-    echo 'source ~/.local/shell-scripts/init.sh' >> ~/.bashrc 
-    source ~/.local/shell-scripts/init.sh
+    echo 'source ~/.local/shell-scripts/init/init.sh' >> ~/.bashrc 
+    source ~/.local/shell-scripts/init/init.sh
 fi
