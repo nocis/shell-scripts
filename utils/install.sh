@@ -12,5 +12,5 @@ echo $PW | sudo -kS apt-get -fy install cmake libx11-dev xorg-dev libglu1-mesa-d
 echo "\e[1;33m --[OGL libs installed] \e[0m"
 
 # 2. install open-vm-tools
-echo $PW | sudo -kS apt-get -fy install open-vm-tools-desktop > /dev/null 2>&1
+echo $PW | sudo -kS apt-get -fy install open-vm-tools open-vm-tools-desktop > /dev/null 2>&1
 echo "\e[1;33m --[open-vm-tools installed] \e[0m"
