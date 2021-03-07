@@ -32,7 +32,7 @@ cd ..
 echo "\e[1;32m [pkgs install successful] \e[0m"
 
 # append init.sh scrirt to bashrc
-if grep -Fxq "init.sh" ~/.bashrc
+if grep -q "init.sh" ~/.bashrc
 then
     # if found
     echo "\e[1;31m init.sh is already loaded \e[0m"
