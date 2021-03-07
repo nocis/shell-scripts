@@ -25,7 +25,6 @@ pwd > /dev/null 2>&1
 ls > /dev/null 2>&1
 git pull --recurse-submodules > /dev/null 2>&1
 echo "\e[1;32m [clone scripts successfull] \e[0m"
-
 cd ..
 
 # 5. auto install packages
