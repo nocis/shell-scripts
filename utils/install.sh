@@ -1,6 +1,3 @@
-# 0. get arguments
-PW=$1
-arg2=$2
+# 0. get arguments(does not require when using source)
 echo $PW
-echo $arg2
 # 1. install c++ build essential
