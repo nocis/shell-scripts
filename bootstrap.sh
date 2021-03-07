@@ -39,6 +39,6 @@ then
 else
     # if not found
     echo 'source ~/.local/shell-scripts/init/init.sh' >> ~/.bashrc 
-    source ~/.local/shell-scripts/init/init.sh 
+    . ~/.local/shell-scripts/init/init.sh 
 fi
 echo "\e[1;32m [init.sh activate successful] \e[0m"
