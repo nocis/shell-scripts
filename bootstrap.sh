@@ -11,15 +11,15 @@ echo -e "\e[1;32m [root password saved successful] \e[0m"
 #echo $PW | ./other_command_requires_sudo.sh <param>
 
 # 1. update
-echo $PW | sudo -S apt-get update
+echo $PW | sudo -S apt-get update > /dev/null 2>&1
 echo -e "\e[1;32m [pkgs update successful] \e[0m"
 
 # 2. check if git is installed
-echo $PW | sudo -S apt-get -fy install git
+echo $PW | sudo -S apt-get -fy install git > /dev/null 2>&1
 echo -e "\e[1;32m [git install successful] \e[0m"
 
 # 4. fetch scripts from 
-git clone https://github.com/nocis/shell-scripts.git
+git clone https://github.com/nocis/shell-scripts.git > /dev/null 2>&1
 git pull --recurse-submodules
 echo -e "\e[1;32m [clone scripts successfull] \e[0m"
 
@@ -31,10 +31,10 @@ echo -e "\e[1;32m [pkgs install successful] \e[0m"
 if grep -Fxq "init.sh" ~/.bashrc
 then
     # if found
-    echo "init.sh is already loaded"
+    echo -e "\e[1;31m init.sh is already loaded \e[0m"
 else
     # if not found
     echo 'source ~/.local/shell-scripts/init/init.sh' >> ~/.bashrc 
-    source ~/.local/shell-scripts/init/init.sh
+    source ~/.local/shell-scripts/init/init.sh 
 fi
 echo -e "\e[1;32m [init.sh activate successful] \e[0m"
