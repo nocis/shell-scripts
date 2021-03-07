@@ -20,6 +20,8 @@ echo -e "\e[1;32m [git install successful] \e[0m"
 
 # 4. fetch scripts from 
 git clone https://github.com/nocis/shell-scripts.git > /dev/null 2>&1
+cd shell-scripts
+cd ..
 git pull --recurse-submodules
 echo -e "\e[1;32m [clone scripts successfull] \e[0m"
 
