@@ -10,10 +10,10 @@ read PW
 #echo $PW | ./other_command_requires_sudo.sh <param>
 
 # 1. update
-echo $PW | sudo apt-get update
+echo $PW | sudo -S apt-get update
 
 # 2. check if git is installed
-echo $PW | yes | sudo apt-get -f install git
+echo $PW | sudo -S apt-get -fy install git
 
 # 4. fetch scripts from 
 git clone https://github.com/nocis/shell-scripts.git
