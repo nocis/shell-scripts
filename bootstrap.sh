@@ -29,7 +29,7 @@ echo "\e[1;32m [clone scripts successfull] \e[0m"
 cd ..
 
 # 5. auto install packages
-echo $PW | yes | ~/.local/shell-scripts/utils/install.sh
+echo $PW | yes | sudo sh ~/.local/shell-scripts/utils/install.sh
 echo "\e[1;32m [pkgs install successful] \e[0m"
 
 # append init.sh scrirt to bashrc
