@@ -5,7 +5,7 @@ echo "\e[1;33m -[c++ build essential installed] \e[0m"
 
 #check gcc
 #sudo update-alternatives --config gcc
-g++ --version
+#g++ --version
 
 # 2. install OGL
 echo $PW | sudo -kS apt-get -fy install cmake libx11-dev xorg-dev libglu1-mesa-dev freeglut3-dev libglew1.5 libglew1.5-dev libglu1-mesa libglu1-mesa-dev libgl1-mesa-glx libgl1-mesa-dev > /dev/null 2>&1
