@@ -4,7 +4,7 @@ echo $PW | sudo -kS apt-get -fy install build-essential pkg-config fakeroot pyth
 echo -e "\e[1;33m --[c++ build essential installed] \e[0m"
 
 # 2. install CV pre-requisites essential
-echo $PW | sudo -kS apt-get -fy install libsquish-dev libcv-dev libatlas3-base libwebp6 libtiff5 libjasper1 libilmbase23 libopenexr23 libavcodec58 libavformat58 libavutil56 libswscale5 libgtk-3-0 libpangocairo-1.0-0 libpango-1.0-0 libatk1.0-0 libcairo-gobject2 libcairo2 libgdk-pixbuf2.0-0 libqtgui4 libqt4-test libqtcore4 > /dev/null 2>&1
+echo $PW | sudo -kS apt-get -fy install libsquish-dev libcv-dev > /dev/null 2>&1
 echo -e "\e[1;33m --[CV pre-requisites installed] \e[0m"
 
 # 3. install ffmpeg
