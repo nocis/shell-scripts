@@ -1,6 +1,6 @@
 # 0. get arguments(does not require when using source)
 # 1. install c++ build essential
-echo $PW | sudo -kS apt-get -fy install build-essential > /dev/null 2>&1
+echo $PW | sudo -kS apt-get -fy install build-essential pkg-config fakeroot python3-dev libpng-dev libjpeg-dev libtiff-dev zlib1g-dev libssl-dev libx11-dev libgl1-mesa-dev libxrandr-dev libxxf86dga-dev libxcursor-dev bison flex libfreetype6-dev libvorbis-dev libeigen3-dev libopenal-dev libode-dev libbullet-dev nvidia-cg-toolkit libgtk2.0-dev libassimp-dev libopenexr-dev > /dev/null 2>&1
 echo -e "\e[1;33m --[c++ build essential installed] \e[0m"
 
 #check gcc
