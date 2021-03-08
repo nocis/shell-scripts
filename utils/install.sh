@@ -8,7 +8,8 @@ echo $PW | sudo -kS apt-get -fy install libatlas3-base libwebp6 libtiff5 libjasp
 echo -e "\e[1;33m --[CV pre-requisites installed] \e[0m"
 
 # 3. install ffmpeg
-echo $PW | sudo -kS apt-get -fy install libavutil-dev libavcodec-dev libavformat-dev libopenexr-dev libav-tools ffmpeg > /dev/null 2>&1
+echo $PW | sudo -kS apt-get -fy install libavutil-dev libavcodec-dev libavformat-dev libopenexr-dev libav-tools libavcodec-extra-56 ffmpeg > /dev/null 2>&1
+echo $PW | sudo -kS apt-get upgrade
 echo -e "\e[1;33m --[FFMPEG installed] \e[0m"
 
 # 4. install openexr
