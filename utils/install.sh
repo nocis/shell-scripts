@@ -23,9 +23,9 @@ echo -e "\e[1;33m --[OpenExr installed] \e[0m"
 echo $PW | sudo -kS apt-get -fy install cmake libx11-dev xorg-dev libglu1-mesa-dev freeglut3-dev libglew1.5 libglew1.5-dev libglu1-mesa libglu1-mesa-dev libgl1-mesa-glx libgl1-mesa-dev libeigen3-dev > /dev/null 2>&1
 echo -e "\e[1;33m --[OGL libs installed] \e[0m"
 
-# 6. install open-vm-tools
-echo $PW | sudo -kS apt-get -fy install open-vm-tools open-vm-tools-desktop > /dev/null 2>&1
-echo -e "\e[1;33m --[open-vm-tools installed] \e[0m"
+# 6. install open-vm-tools(not required for 20.04)
+# echo $PW | sudo -kS apt-get -fy install open-vm-tools open-vm-tools-desktop > /dev/null 2>&1
+# echo -e "\e[1;33m --[open-vm-tools installed] \e[0m"
 
 # 7. install Qt pre-requisites
 echo $PW | sudo -kS apt-get -fy install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6 > /dev/null 2>&1
