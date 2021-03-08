@@ -1,5 +1,3 @@
-ls -l `which sh`
-
 # 0. get arguments(does not require when using source)
 # 1. install c++ build essential
 echo $PW | sudo -kS apt-get -fy install build-essential > /dev/null 2>&1
