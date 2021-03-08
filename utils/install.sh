@@ -51,3 +51,14 @@ then
 else
     echo -e "\e[1;31m --[cmake not installed] \e[0m"
 fi
+
+# 7. install gitkraken
+read -p "Do you want to install gitkraken（snap required）? " -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    echo $PW | sudo -kS snap install gitkraken --classic  > /dev/null 2>&1
+    echo -e "\e[1;33m --[gitkraken installed] \e[0m"
+else
+    echo -e "\e[1;31m --[gitkraken not installed] \e[0m"
+fi
