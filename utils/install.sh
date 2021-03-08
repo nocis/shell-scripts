@@ -7,8 +7,8 @@ echo -e "\e[1;33m --[c++ build essential installed] \e[0m"
 #sudo update-alternatives --config gcc
 #g++ --version
 
-# 2. install OGL
-echo $PW | sudo -kS apt-get -fy install cmake libx11-dev xorg-dev libglu1-mesa-dev freeglut3-dev libglew1.5 libglew1.5-dev libglu1-mesa libglu1-mesa-dev libgl1-mesa-glx libgl1-mesa-dev > /dev/null 2>&1
+# 2. install OGL and eigen3
+echo $PW | sudo -kS apt-get -fy install cmake libx11-dev xorg-dev libglu1-mesa-dev freeglut3-dev libglew1.5 libglew1.5-dev libglu1-mesa libglu1-mesa-dev libgl1-mesa-glx libgl1-mesa-dev libeigen3-dev > /dev/null 2>&1
 echo -e "\e[1;33m --[OGL libs installed] \e[0m"
 
 # 2. install open-vm-tools
