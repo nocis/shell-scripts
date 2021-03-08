@@ -24,7 +24,7 @@ read -p "Do you want to install CLion（snap required）? " -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    echo $PW | sudo -kS snap install clion --classic
+    echo $PW | sudo -kS snap install clion --classic  > /dev/null 2>&1
     echo -e "\e[1;33m --[CLion installed] \e[0m"
 else
     echo -e "\e[1;31m --[CLion not installed] \e[0m"
@@ -35,7 +35,7 @@ read -p "Do you want to install vscode（snap required）? " -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    echo $PW | sudo -kS snap install --classic code
+    echo $PW | sudo -kS snap install --classic code  > /dev/null 2>&1
     echo -e "\e[1;33m --[vscode installed] \e[0m"
 else
     echo -e "\e[1;31m --[vscode not installed] \e[0m"
@@ -46,7 +46,7 @@ read -p "Do you want to install cmake（snap required）? " -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    echo $PW | sudo -kS snap install cmake --classic
+    echo $PW | sudo -kS snap install cmake --classic  > /dev/null 2>&1
     echo -e "\e[1;33m --[cmake installed] \e[0m"
 else
     echo -e "\e[1;31m --[cmake not installed] \e[0m"
