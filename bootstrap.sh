@@ -1,5 +1,6 @@
 #!/bin/bash
 cd $HOME/.local
+
 # 0. save root password
 echo "enter the sudo password, please"
 read PW
