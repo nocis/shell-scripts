@@ -1,6 +1,8 @@
 #!/bin/bash
 cd $HOME/.local
 
+ls -l `which sh`
+
 # 0. save root password
 echo "enter the sudo password, please"
 read PW
@@ -27,6 +29,7 @@ git pull --recurse-submodules > /dev/null 2>&1
 echo "\e[1;32m [clone scripts successfull] \e[0m"
 cd ..
 
+ls -l `which sh`
 # 5. auto install packages
 . ~/.local/shell-scripts/utils/install.sh
 echo "\e[1;32m [pkgs install successful] \e[0m"
