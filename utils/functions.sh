@@ -3,7 +3,9 @@ check_installed()
 {
     hash $1 > /dev/null 2>&1
     if [ "$?" != "0" ]; then
-    print "command $1 is not found."
-    exit 1
+        echo -e "\e[1;31m [$1 is not found] \e[0m"
+        exit 1
+    else
+        echo -e "\e[1;32m [$1 is installed] \e[0m"
     fi
 }
