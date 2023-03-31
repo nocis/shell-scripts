@@ -1,4 +1,12 @@
 #!/bin/bash
+
+
+
+# chmod +x ./x.sh new pid
+# bash x.sh       new pid
+# source x.sh     current pid(for current terminal env)
+# . x.sh          current pid(for current terminal env)
+
 cd $HOME/.local
 
 # 0. save root password
