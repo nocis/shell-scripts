@@ -20,7 +20,7 @@ if [ -d "$HOME/.local/bin" ]; then
     export PATH="$HOME/.local/bin:$PATH"
 fi
 
-# check if ~/.local/etc/config.sh  existed, source it
+# if -f check if ~/.local/etc/config.sh  existed, source it
 if [ -f "$HOME/.local/etc/config.sh" ]; then
     . "$HOME/.local/etc/config.sh"
 fi
