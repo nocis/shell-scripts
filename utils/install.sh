@@ -104,18 +104,18 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
     hash conda > /dev/null 2>&1
     if [ "$?" != "0" ]; then
-        echo -e "\e[1;31m [conda not found, install start] \e[0m"
-        echo $PW | mkdir -p $HOME/anaconda3  > /dev/null 2>&1
-        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -P $HOME/tmp/anaconda3
+        echo -e "\e[1;31m [miniconda not found, install start] \e[0m"
+        # echo $PW | mkdir -p $HOME/anaconda3  > /dev/null 2>&1
+        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -P $HOME/tmp/miniconda3
         bash $HOME/tmp/anaconda3/Miniconda3-latest-Linux-x86_64.sh -b
         rm $HOME/tmp/anaconda3/Miniconda3-latest-Linux-x86_64.sh
-        echo 'export PATH="$HOME/anaconda3/bin:$PATH"' >> $HOME/.bashrc 
+        echo 'export PATH="$HOME/miniconda/bin:$PATH"' >> $HOME/.bashrc 
         # Reload default profile
         conda init
         source $HOME/.bashrc
         echo -e "\e[1;33m --[miniconda installed] \e[0m"
     else
-        echo -e "\e[1;32m [conda is installed] \e[0m"
+        echo -e "\e[1;32m [miniconda is installed] \e[0m"
     fi
 else
     echo -e "\e[1;31m --[miniconda not installed] \e[0m"
