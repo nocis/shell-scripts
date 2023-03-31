@@ -2,9 +2,9 @@
 #
 # open NBlog dev env.
 
-# Create a new session named "newsess" and run a command inside the session
+# Create a new session named "nblog" and run a command inside the session
 tmux new-session -d -s nblog
 tmux send-keys -t nblog "cd $HOME/NBlog" Enter
 tmux send-keys -t nblog "conda activate myblog" Enter
-# Attach to session named "newsess"
-tmux attach -t newsess
+# Attach to session named "nblog"
+tmux attach -t nblog
