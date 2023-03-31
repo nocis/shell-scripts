@@ -24,7 +24,7 @@ cd ~/myblog
 
 
 # 2. install prerequisites
-check_installed yarn
+# check_installed yarn
 npm i -g yarn > /dev/null 2>&1
 npm install > /dev/null 2>&1
 echo -e "\e[1;32m [myblog is initialized] \e[0m"
