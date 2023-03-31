@@ -106,7 +106,7 @@ then
     if [ "$?" != "0" ]; then
         echo -e "\e[1;31m [conda not found, install start] \e[0m"
         echo $PW | mkdir -p $HOME/anaconda3  > /dev/null 2>&1
-        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -P $HOME/anaconda3
+        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -P $HOME/tmp/anaconda3
         bash $HOME/anaconda3/Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/anaconda3
         rm $HOME/anaconda3/Miniconda3-latest-Linux-x86_64.sh
         echo 'export PATH="$HOME/anaconda3/bin:$PATH"' >> $HOME/.bashrc 
