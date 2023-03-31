@@ -96,4 +96,29 @@ then
 else
     echo -e "\e[1;31m --[tmux not installed] \e[0m"
 fi
+
+# 14. install miniconda
+read -p "Do you want to install miniconda? " -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    hash conda > /dev/null 2>&1
+    if [ "$?" != "0" ]; then
+        echo -e "\e[1;31m [conda not found, install start] \e[0m"
+        echo $PW | mkdir ~/anaconda3  > /dev/null 2>&1
+        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -p ~/anaconda3
+        bash ~/anaconda3/Miniconda3-latest-Linux-x86_64.sh -b -p ~/anaconda3
+        rm ~/anaconda3/Miniconda3-latest-Linux-x86_64.sh
+        echo 'export PATH="~/anaconda3/bin:$PATH"' >> ~/.bashrc 
+        # Reload default profile
+        conda init
+        source ~/.bashrc
+    else
+        echo -e "\e[1;32m [conda is installed] \e[0m"
+    fi
+    echo $PW | sudo -kS snap install tmux --classic  > /dev/null 2>&1
+    echo -e "\e[1;33m --[miniconda installed] \e[0m"
+else
+    echo -e "\e[1;31m --[miniconda not installed] \e[0m"
+fi
  
