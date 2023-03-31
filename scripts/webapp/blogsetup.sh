@@ -20,7 +20,12 @@ conda activate myblog
 
 cd ~
 # git myblog
-cd ~/myblog
+git clone https://github.com/nocis/NBlog.git > /dev/null 2>&1
+cd NBlog
+pwd > /dev/null 2>&1
+ls > /dev/null 2>&1
+git pull --recurse-submodules > /dev/null 2>&1
+echo -e "\e[1;32m [clone NBlog successfull] \e[0m"
 
 
 # 2. install prerequisites
