@@ -17,6 +17,7 @@ esac
 
 # add ~/.local/shell-scripts/bin to PATH
 if [ -d "$HOME/.local/shell-scripts/bin" ]; then
+    chmod -R +x $HOME/.local/shell-scripts/bin
     export PATH="$HOME/.local/shell-scripts/bin:$PATH"
 fi
 
