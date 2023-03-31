@@ -15,9 +15,9 @@ case "$-" in
     *) return
 esac
 
-# add ~/.local/bin to PATH
-if [ -d "$HOME/.local/bin" ]; then
-    export PATH="$HOME/.local/bin:$PATH"
+# add ~/.local/shell-scripts/bin to PATH
+if [ -d "$HOME/.local/shell-scripts/bin" ]; then
+    export PATH="$HOME/.local/shell-scripts/bin:$PATH"
 fi
 
 # if -f check if ~/.local/etc/config.sh  existed, source it
