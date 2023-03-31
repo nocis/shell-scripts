@@ -3,7 +3,8 @@ cd $HOME/.local
 
 # 0. save root password
 echo "enter the sudo password, please"
-read -s PW
+IFS= read -rs PW
+# IFS= make read accept white space  
 echo -e "\e[1;32m [root password saved successful] \e[0m"
 
 #echo $PW | ./playback_delete_data_patch.sh 09_delete_old_data_p.sql  
