@@ -92,6 +92,7 @@ echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     echo $PW | sudo -kS snap install tmux --classic  > /dev/null 2>&1
+    echo 'export TERM=xterm' >> $HOME/.bashrc 
     echo -e "\e[1;33m --[tmux installed] \e[0m"
 else
     echo -e "\e[1;31m --[tmux not installed] \e[0m"
