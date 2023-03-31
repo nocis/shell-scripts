@@ -111,8 +111,8 @@ then
         rm $HOME/tmp/miniconda3/Miniconda3-latest-Linux-x86_64.sh
         echo 'export PATH="$HOME/miniconda3/bin:$PATH"' >> $HOME/.bashrc 
         # Reload default profile
-        conda init
         source $HOME/.bashrc
+        conda init
         echo -e "\e[1;33m --[miniconda installed] \e[0m"
     else
         echo -e "\e[1;32m [miniconda is installed] \e[0m"
