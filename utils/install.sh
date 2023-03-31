@@ -74,3 +74,26 @@ then
 else
     echo -e "\e[1;31m --[gitkraken not installed] \e[0m"
 fi
+
+# 12. install emacs
+read -p "Do you want to install emacs? " -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    echo $PW | sudo -kS snap install emacs --classic  > /dev/null 2>&1
+    echo -e "\e[1;33m --[emacs installed] \e[0m"
+else
+    echo -e "\e[1;31m --[emacs not installed] \e[0m"
+fi
+
+# 13. install TMUX
+read -p "Do you want to install tmux? " -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    echo $PW | sudo -kS snap install tmux --classic  > /dev/null 2>&1
+    echo -e "\e[1;33m --[tmux installed] \e[0m"
+else
+    echo -e "\e[1;31m --[tmux not installed] \e[0m"
+fi
+ 
