@@ -20,7 +20,7 @@ conda activate myblog
 
 cd ~
 # git myblog
-git clone https://github.com/nocis/NBlog.git > /dev/null 2>&1
+git clone git@github.com:nocis/NBlog.git > /dev/null 2>&1
 cd NBlog
 pwd > /dev/null 2>&1
 ls > /dev/null 2>&1
