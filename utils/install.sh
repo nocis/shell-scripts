@@ -113,11 +113,10 @@ then
         # Reload default profile
         conda init
         source ~/.bashrc
+        echo -e "\e[1;33m --[miniconda installed] \e[0m"
     else
         echo -e "\e[1;32m [conda is installed] \e[0m"
     fi
-    echo $PW | sudo -kS snap install tmux --classic  > /dev/null 2>&1
-    echo -e "\e[1;33m --[miniconda installed] \e[0m"
 else
     echo -e "\e[1;31m --[miniconda not installed] \e[0m"
 fi
