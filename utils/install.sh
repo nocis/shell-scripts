@@ -109,7 +109,7 @@ then
         wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -P $HOME/tmp/miniconda3
         bash $HOME/tmp/miniconda3/Miniconda3-latest-Linux-x86_64.sh -b
         rm $HOME/tmp/miniconda3/Miniconda3-latest-Linux-x86_64.sh
-        echo 'export PATH="$HOME/miniconda/bin:$PATH"' >> $HOME/.bashrc 
+        echo 'export PATH="$HOME/miniconda3/bin:$PATH"' >> $HOME/.bashrc 
         # Reload default profile
         conda init
         source $HOME/.bashrc
