@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# open NBlog dev env.
+
+tmux
+cd $HOME/NBlog
+conda activate myblog
