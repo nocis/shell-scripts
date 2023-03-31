@@ -107,8 +107,8 @@ then
         echo -e "\e[1;31m [miniconda not found, install start] \e[0m"
         # echo $PW | mkdir -p $HOME/anaconda3  > /dev/null 2>&1
         wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -P $HOME/tmp/miniconda3
-        bash $HOME/tmp/anaconda3/Miniconda3-latest-Linux-x86_64.sh -b
-        rm $HOME/tmp/anaconda3/Miniconda3-latest-Linux-x86_64.sh
+        bash $HOME/tmp/miniconda3/Miniconda3-latest-Linux-x86_64.sh -b
+        rm $HOME/tmp/miniconda3/Miniconda3-latest-Linux-x86_64.sh
         echo 'export PATH="$HOME/miniconda/bin:$PATH"' >> $HOME/.bashrc 
         # Reload default profile
         conda init
